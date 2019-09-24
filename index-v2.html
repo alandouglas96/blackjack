@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style-v2.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="jquery-3.4.1.js">
+
+  </script>
+  <title>Blackjack</title>
+</head>
+<body>
+  <header class = "headerGrid">
+    <h1 id="blackjack">BLACKJACK</h1>
+    <h1 id="dollar1">$</h1>
+    <h1 id="dollar2">$</h1>
+  </header>
+
+  <div class="grid">
+
+    <div id="stack" class="stack">
+      <img src="cards/red.png" alt="" width="100px">
+    </div>
+    <div id="dealerCards" class="cards">
+      <div class="dealerGrid">
+
+      </div>
+    </div>
+    <div id="playerCards" class="cards">
+      <div id="playerGrid" class="playerGrid">
+
+      </div>
+    </div>
+    <div id="dealerCounter" class="counter">
+      0
+    </div>
+    <div id="playerCounter" class="counter">
+      0
+    </div>
+    <div id="message" class="message">
+      Loading message...
+    </div>
+
+    <div id="hit" class="choice">
+      HIT
+    </div>
+    <div id="stand" class="choice">
+      STAND
+    </div>
+    <div id="start" class="start">
+      START
+    </div>
+    <div id="restart" class="restart">
+      RESTART
+    </div>
+    <div class="stackNumber">
+      <form id="form">
+        <label id="label" for="stackNum">Number of stacks: </label>
+        <select id="stackNum" name="stackNumList" onchange="getSelectedValue();">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </form>
+    </div>
+  </div>
+  <script src="app-v2.js" charset="utf-8"></script>
+</body>
+</html>

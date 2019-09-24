@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+}
+
+header {
+  color: black;
+  background-color: gold;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+
+}
+
+#blackjack {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#dollar1 {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#dollar2 {
+  grid-column: 3 / 4;
+  grid-row: 1;
+  display: flex;
+  justify-content:flex-end ;
+}
+
+body {
+  background: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  /*grid-template-areas:
+  ". . . . . . . . . . . . "
+  ". s s . dc dc dc dc dc . . . "
+  ". s s . dc dc dc dc dc . dk . ""
+  ". s s . dc dc dc dc dc . . . ""
+  ". . . . . . . . . . . . "
+  ". . . . m m m m m . . . "
+  ". . . . . . . . . . . . "
+  ". st st . pc pc pc pc pc . . ."
+  ". . . . pc pc pc pc pc . pk ."
+  ". re re . pc pc pc pc pc . . ."
+  ". . . . . . . . . . . . ";*/
+
+}
+
+.stack {
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.start {
+  grid-column: 2 / 4;
+  grid-row: 8 / 9;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  border-color: gold;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.restart {
+  grid-column: 2 / 4;
+  grid-row: 10 / 11;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  border-color: gold;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.counter {
+  color: white;
+  border: 3px solid white;
+  width: 50px;
+  margin: 10px auto;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 15px;
+
+}
+
+#dealerCounter {
+  grid-column: 11 / 12;
+  grid-row: 3 / 4;
+  margin: auto;
+}
+
+#playerCounter {
+  grid-column: 11 / 12;
+  grid-row: 9 / 10;
+  margin: auto;
+}
+
+#message{
+  grid-column: 5 / 11;
+  grid-row: 6 / 7;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border: 3px solid white;
+  padding: 7px 15px;
+  margin: auto;
+  display: flex;
+  justify-content:
+}
+
+#hit {
+  grid-column: 6 / 7;
+  grid-row: 12 / 13;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  border-color: green;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#stand {
+  grid-column: 8 / 9;
+  grid-row: 12 / 13;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  border-color: green;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#dealerCards {
+  grid-column: 5 / 10;
+  grid-row: 2 / 5;
+  margin: auto;
+  display: flex;
+
+}
+
+#playerCards {
+  grid-column: 5 / 10;
+  grid-row: 8 / 11;
+  margin: auto;
+  display: flex;
+}
+
+/*NUMBER OF STACKS*/
+
+.stackNumber{
+  grid-column: 2 / 5;
+  grid-row: 5 / 6;
+  margin: auto;
+  display: flex;
+  justify-content:center ;
+  color: white;
+
+}
